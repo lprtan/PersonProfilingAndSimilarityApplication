@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace EntityLayer.Concrete
@@ -15,6 +16,7 @@ namespace EntityLayer.Concrete
         public DateTime BirthDate { get; set; }
         public string Nationality { get; set; }
         public string IdentityNumber { get; set; }
-        public ProfileData Profile { get; set; }
+
+        public ProfileData? Profile { get; set; }
     }
 }
